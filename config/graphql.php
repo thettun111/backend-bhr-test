@@ -77,6 +77,8 @@ return [
                 // ExampleQuery::class,
                 'book' => App\graphql\Queries\BookQuery::class,
                 'books' => App\graphql\Queries\BooksQuery::class,
+                'employee' => App\graphql\Queries\EmployeeQuery::class,
+                'employees' => App\graphql\Queries\EmployeesQuery::class,
             ],
             'mutation' => [
                 // ExampleMutation::class,
@@ -86,6 +88,12 @@ return [
                 'updateBook' => App\graphql\Mutations\UpdateBookMutation::class,
                 // delete a book
                 'deleteBook' => App\graphql\Mutations\DeleteBookMutation::class,
+                // Create Employee
+                'createEmployee' => App\graphql\Mutations\CreateEmployeeMutation::class,
+                // update book
+                'updateEmployee' => App\graphql\Mutations\UpdateEmployeeMutation::class,
+                // delete a book
+                'deleteEmployee' => App\graphql\Mutations\DeleteEmployeeMutation::class,
             ],
             // The types only available in this schema
             'types' => [
@@ -117,6 +125,7 @@ return [
         // ExampleRelationType::class,
         // \Rebing\GraphQL\Support\UploadType::class,
         'Book' => App\graphql\Types\BookType::class,
+        'Employee' => App\graphql\Types\EmployeeType::class,
     ],
 
     // The types will be loaded on demand. Default is to load all types on each request

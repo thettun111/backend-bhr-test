@@ -17,6 +17,6 @@ class BookSeeder extends Seeder
         \App\Book::create([
             'author'     => $faker->name,
             'book_name' => $faker->text
-        ]);
+        ], 10);
     }
 }
