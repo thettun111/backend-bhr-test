@@ -16,8 +16,10 @@
         "guzzlehttp/guzzle": "^6.3.1|^7.0.1",
         "joselfonseca/lighthouse-graphql-passport-auth": "^6.0",
         "laravel/framework": "^7.29",
+        "laravel/passport": "~9.0",
         "laravel/tinker": "^2.5",
         "mll-lab/laravel-graphql-playground": "^2.5",
+        "nuwave/lighthouse": "^5.26",
         "rebing/graphql-laravel": "^8.0"
     },
     "require-dev": {
